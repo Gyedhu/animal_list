@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: steelblue;
+    color: rgba(255, 255, 255, 0.678);
+    padding: 4em;
+    text-align: center;
+    font-family: "Righteous";
+    overflow: hidden;
+}
+
+.header img {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 5em;
+}
+
+#nav {
+    background-color: aquamarine;
+    width: 20%;
+    height: 600px;
+    float:left;
+    line-height: 30px;
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(59, 59, 59);
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+#nav a:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+#nav li:first-child{
+    background-color: rgba(0, 0, 0, 0.301);
+    margin: 5px;
+}
+
+#section {
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 80%;
+    float: right;
+    padding: 1em 5em;
+    color: rgb(59, 59, 59);
+    font-size: 1.5em;
+}
+
+#footer {
+    background-color: steelblue;
+    clear: both;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+    #nav {
+        display: inline;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        display: inline-block;
+    }
+
+    .header img {
+        float: none;
+        width: 90%;
+    }
+
+    #nav li {
+        display: inline;
+    } 
+
+    #nav a {
+        display: inline;
+    }
+
+    #section {
+        width: 100%;
+        float: none;
+    }
+}
+
